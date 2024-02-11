@@ -1,6 +1,10 @@
-.header{
+/* Old styles */
+
+.header{               
     text-align: center;
     margin-bottom: -20px;
+    color: darkblue;       
+    /* Here is class selector for heading color */
 }
 .header2{
     text-align: center;
@@ -8,7 +12,8 @@
 }
 .navigation{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .left {
     width: 600px;
@@ -56,6 +61,7 @@ text-align: center;
     padding-left: 175px;
     font-size: 20px;
     line-height: 28px;
+    background-size: 5px;
     
 }
 .table_text2{
@@ -63,8 +69,37 @@ text-align: center;
     padding-right: 240px;
     font-size: 20px;
     line-height: 28px;
+    background-size: 5px;
 }
 .table_notes{
     padding: 50px;
     width: 700px;
+}
+
+/* Hi Rob! I already had a lot of styles, so all new what I created will be below. Thanks! */
+
+body{
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: hsl(240, 100%, 96%);
+}
+#my_image{
+    box-shadow: 0px 2px 1px black;   
+}
+#my_image_2{
+    box-shadow: 0px 2px 1px black;
+}
+
+li:nth-child(odd) {
+    background-color: hsl(240, 100%, 96%);
+
+}
+a:hover{
+    background-color: lightgray;
+}
+a{
+    background-color: hsl(240, 85%, 92%);
+    border-style: dotted
 }
