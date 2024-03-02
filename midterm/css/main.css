@@ -14,10 +14,11 @@ h1{
     font-size: 2rem;
     font-weight: lighter
 }
-article h1, h2 :not(header h1){
-    margin-bottom: 0;
+article h1, h2{
+    margin-bottom: -5px;
+    font-size: 29px;
  }
- header{
+header{
     position: relative;  
 }
 header h1{
@@ -34,6 +35,8 @@ header ul{
     margin: 0;
     padding: 10px;
     display: flex;
+    margin-top: -8px;
+    margin-bottom: -10px;
 }
 
 .first_with_photo img{
@@ -44,7 +47,7 @@ header ul{
 }
 .first_with_photo p{
     line-height: 1.35rem;
-    font-size: 17px
+    font-size: 17px;
 }
 .first_with_photo h1{
     padding-bottom: 5px;
@@ -52,9 +55,6 @@ header ul{
 ul {
     padding: 10px;
     margin: 10px;
-}
-header ul{
-    margin-top: -8px;
 }
 .header-story{
     border-right: 1px solid black;
@@ -68,4 +68,12 @@ header li{
     display: flex;
     align-items: center; 
     justify-content: center;
+}
+footer{
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+.checkbox h1{
+    font-size: 20px;
 }
