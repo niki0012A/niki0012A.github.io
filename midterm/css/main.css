@@ -13,21 +13,27 @@ body{
 h1{
     font-size: 2rem;
     font-weight: lighter
-
 }
-.header{
-    position: relative;
-    margin: 0 auto;
-    
+article h1, h2 :not(header h1){
+    margin-bottom: 0;
+ }
+ header{
+    position: relative;  
 }
 header h1{
     position: absolute;
     color: white;
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     text-align: center;
     width: 100%;
-    top: 50% ;
+    top: 41% ;
     font-weight: lighter;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
 }
 
 .first_with_photo img{
@@ -42,4 +48,24 @@ header h1{
 }
 .first_with_photo h1{
     padding-bottom: 5px;
+}
+ul {
+    padding: 10px;
+    margin: 10px;
+}
+header ul{
+    margin-top: -8px;
+}
+.header-story{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+header li{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    width: 1000px;
+    height: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
