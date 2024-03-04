@@ -5,18 +5,18 @@ body{
     max-width: 1024px;
     margin: 0% auto;
     background: #cfe8e5;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    
 }
 .main_padding_all{
     padding: 10px;
 }
 h1{
-    font-size: 2rem;
-    font-weight: lighter
+    font-weight: lighter;
 }
 article h1, h2{
     margin-bottom: -5px;
-    font-size: 29px;
+    font-size: 30px;
  }
 header{
     position: relative;  
@@ -24,7 +24,7 @@ header{
 header h1{
     position: absolute;
     color: white;
-    font-size: 3.5rem;
+    font-size: 58px;
     text-align: center;
     width: 100%;
     top: 41% ;
@@ -43,16 +43,22 @@ header ul{
        float: left;
        max-width: 230px;
        padding-right: 20px;
-       padding-bottom: 25px;
+       padding-bottom: 20px;
 }
 .first_with_photo p{
-    line-height: 1.35rem;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
 }
 .first_with_photo h1{
     padding-bottom: 5px;
 }
 ul {
+    padding: 10px;
+    margin: 10px;
+}
+.facts ul{
+    font-weight: 600;
     padding: 10px;
     margin: 10px;
 }
@@ -62,7 +68,7 @@ ul {
 }
 header li{
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 23px;
     width: 1000px;
     height: 30px;
     display: flex;
@@ -75,5 +81,55 @@ footer{
     text-align: right;
 }
 .checkbox h1{
+    font-weight: 600;
     font-size: 20px;
+    margin-bottom: 20px;
+}
+.checkbox{
+    padding: 10px;
+}
+.forms_header{
+    margin-bottom: 15px;
+}
+.forms{
+    border: 1.5px solid black;
+    font-weight: 600;
+}
+.name{
+    margin-top: 20px;
+    padding: 10px;
+}
+.email{
+    margin-top: 20px;
+    padding: 10px;
+}
+.message{
+    margin-top: 20px;
+    padding: 10px;
+}
+.checkbox label{
+     padding-bottom: 5px;
+}
+.name input {
+    width: 99%;
+    height: 25px;
+    border: 1px solid rgb(209, 198, 198);
+}
+.email input{
+    width: 99%;
+    height: 25px;
+    border: 1px solid rgb(209, 198, 198);
+}
+.message input{
+    height: 80px;
+    width: 99%;
+    border: 1px solid rgb(209, 198, 198);
+}
+button{
+    margin: 8px;
+    background: none;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px;
 }
