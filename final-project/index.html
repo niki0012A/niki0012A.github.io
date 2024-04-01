@@ -4,29 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final niki0012A</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <script src="https://kit.fontawesome.com/a2565f177f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- all content in blocks have wrap. a bit padding AT CONTENT -->
     <!-- But also all page have a wrapper  beside few element with bleeding-->
     <!-- All DIVs with infomation at PC will be with flex and display. All blocks will be moved. -->
-
+<div class="main_wrapper">
 
     <!-- SITE BELOW -->
 
     <!-- nav with list of 5 items on mobile up-down, on PC left-right and above 
-        searchinf form with symbol-->
-
-
-
-
+        search form with symbol-->
+    <nav>
+        <img src="images/logo.png" alt="logo">
+         <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Team</li>
+            <li>Contact</li>
+         </ul>
+         <form method="post">
+            <label for="search"></label>
+            <input type="text" id="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+     </nav>
     <!-- header? or div with photo on a background and paragraph with h1 with transparent black background-color. Orange button brobably -->
+    <header>
+        <div class="welcome">
+            <div>
+                <img src="images/main-banner.jpg" alt="main-banner">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet quaerat autem amet iusto quae asperiores iure, officiis deleniti. Maxime omnis error suscipit soluta ipsam aut iste natus molestias totam!</p>
+            </div>
+            <div class="orange-button">
+             <p>Connect with us <i class="fa-solid fa-caret-right"></i>
+            </p>
+            </div>
+        </div>
+    </header>
 
     <!-- ABOUT US
     div. Ancher point. content have padding. Yellow background.Image above. H1. Paragraph. At PC img left. Background have bleeding. -->
+    <div class="about_us">
+        <div class="about_wrapper">
+            <img src="images/about-us.jpg" alt="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem suscipit aut, quidem in sapiente consectetur voluptates quae corrupti quasi vero quibusdam provident ipsam ex soluta laudantium quod illum dolor.</p>
+        </div>
+    </div>
 
     <!-- OUR SERVICES 
     main div with H1 and display: grid(6) in PC, one line up-down in mobile. Display: flex?
     ALL small pages into this div-->
+    <div class="services-main">
+        <h1>Our Services</h1>
+
+    
+
+    </div>
 
     <!-- DIGITAL INFORMATION/MARKETING/VIDEO/WEB DEV/PRINT 
     
@@ -64,5 +103,6 @@
     black background
     paragraphs
     orange font color -->
+</div>
 </body>
 </html>

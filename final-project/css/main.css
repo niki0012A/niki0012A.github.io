@@ -1,0 +1,20 @@
+
+
+.about_us{
+    background-color: rgb(255, 238, 183);
+    max-height: 400px;
+}
+.about_wrapper > img{
+    padding: 10px;
+    max-width: 500px;
+}
+.about_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 80%;
+}
+.about_wrapper > p{
+    grid-column: 2 / 3;
+    
+}
