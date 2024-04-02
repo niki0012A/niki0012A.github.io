@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final niki0012A</title>
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/a2565f177f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -70,43 +70,46 @@
         <img src="images/digital.jpg" alt="digital">
         <h2>Digital Transformation</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptates a enim voluptatibus ipsam, maxime, deleniti nobis dolorem distinctio quibusdam explicabo eos. Non dignissimos accusamus quod consequuntur ipsum nostrum perferendis!</p>
-        <div class="black-button">
-            <p>Digital Plans <i class="fa-solid fa-caret-right"></i></p></div>
+        <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
         </div>
      <div class="marketing">
         <img src="images/marketing.jpg" alt="marketing">
         <h2>Marketing</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aliquam ducimus saepe fugiat nulla laudantium quam nobis accusamus soluta, modi eveniet odio ab nesciunt assumenda unde! Nulla temporibus architecto quae.</p>
-        <div class="black-button">
-            <p>Marketing Plans <i class="fa-solid fa-caret-right"></i></p></div>
+        <button>Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
      </div>
      <div class="video">
         <img src="images/video.jpg" alt="video">
         <h2>Video Production</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ex consectetur quaerat laudantium consequuntur, dolores, dolorum corporis, maxime non voluptate a doloremque quos quas similique voluptates. Eum facere fugiat deleniti.</p>
-        <div class="black-button">
-            <p>Video Plans <i class="fa-solid fa-caret-right"></i></p></div>
+        <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
      </div>
      <div class="web_development">
         <img src="images/web.jpg" alt="web">
         <h2>Web Development</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ipsa sed ut corporis fuga officia nesciunt expedita unde laudantium eos itaque at, a ea dicta quaerat quos molestiae nam voluptate!</p>
-        <div class="black-button">
-            <p>Web Plans <i class="fa-solid fa-caret-right"></i></p></div>
+        <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
      </div>
         <div class="print">
             <img src="images/print.jpg" alt="print">
             <h2>Print</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum vel consequuntur ipsum necessitatibus aperiam delectus cum aspernatur modi porro ipsa alias eligendi recusandae error omnis veniam, nam reprehenderit harum?</p>
-            <div class="black-button">
-                <p>Print Plans <i class="fa-solid fa-caret-right"></i></p></div>
+            <button>Print Plans <i class="fa-solid fa-caret-right"></i></button>
         </div>
      </div>
  </div> <!--THIS IS AN END OF MAIN_WRAPPER OF FIRST PART-->
 
-    <!-- OUR VISION 
+ <div class="bleeding_wrapper">
+  <!-- OUR VISION 
     div with bleeding. Different wrapper. Image on a background, H1, paragraph, transparent button with orange stroke-->
-
+    <div class="vision">
+        <img src="images/vision.jpg" alt="vision">
+        <h2>Our Vision</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque debitis corrupti nam nostrum ex exercitationem officia odit. Numquam exercitationem deserunt vel natus reiciendis, quam quia aut, a, earum voluptatibus veritatis?</p>
+        <button>Learn More <i class="fa-solid fa-caret-right"></i></button>
+    </div>
+</div> 
+ <div class="main_wrapper2">
     <!-- OUR TEAM
     main div with display:grid on a PC. In mobile just a column. 
     
@@ -115,6 +118,29 @@
     IN PC:
     EACH div. Yellow background. Image in a different sides. H1, h2, LINE, paragraph.-->
 
+    <div class="our_team">
+        <div class="john">
+            <div><img src="images/john.jpg" alt="john"></div>
+            <div>
+            <h2>John Doe</h2>
+            <h3>CEO and Co-owner</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quia, magni cupiditate provident quibusdam asperiores soluta doloremque impedit aperiam harum ducimus rem ab delectus ut, sint, neque quae? Architecto, officia?</p>
+           </div>
+        </div>
+        <div class="bob">
+            <div><img src="images/bob.jpg" alt="bob"></div>
+            <div>
+                <h2>Bob Rite</h2>
+                <h3>CFO and Co-owner</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, veniam qui. Perspiciatis iure culpa commodi excepturi eaque aut quisquam cumque qui veniam inventore? Natus assumenda, quos itaque possimus ducimus officia.</p>
+            </div>
+        </div>
+
+    </div>
+ <div class="contact_us">
+    <h1>Contact Us</h1>
     <!-- CONTACT US
      MAIN DIV WITH H1
             one more div SEND US A MESSAGE
@@ -130,10 +156,28 @@
             IN PC: DISPLAY: GRID
             Send us a message and Location in the same row
         -->
+    <div class="send_message">
+        <h2>Send us a message</h2>
+        <form action="post">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </form>
+        <form action="post">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </form>
+        <form action="post">
+            <label for="message">Message</label>
+            <input type="text" id="message">
+        </form>
+        <button>Send</button>
 
+    </div>
+</div>
     <!-- FOOTER
     black background
     paragraphs
     orange font color -->
+</div>
 </body>
 </html>
