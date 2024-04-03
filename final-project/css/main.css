@@ -1,26 +1,40 @@
-
-
-.about_us{
-    background-color: rgb(255, 238, 183);
-    max-height: 400px;
+/* .main_wrapper{
+    width: 1300px;
+    margin: auto;
 }
-.about_wrapper > img{
-    padding: 10px;
-    max-width: 500px;
+.main_wrapper2{
+    width: 1300px;
+    margin: auto;
+}
+nav{
+    background-color: rgb(89, 81, 81);
+}
+.logo, .navigation, .search{
+    background-color: aqua;
+    width: 1100px;
+    margin: auto;
+}
+.about_us{
+    background-color: bisque;
 }
 .about_wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+    width: 1100px;
     margin: auto;
-    max-width: 80%;
 }
-.about_wrapper > p{
-    grid-column: 2 / 3;
-    
+.vision_wrapper_bleeding{
+    background-color: gray;
 }
-/* .john{
-    display: flex;
+.vision{
+    background-color: aqua;
+    width: 1100px;
+    margin: auto;
 }
-.john img{
-    max-width: 500px;
+footer{
+    background-color: rgb(183, 176, 176);
+}
+.footer_content{
+    background-color: aqua;
+    width: 1100px;
+    margin: auto;
 } */
