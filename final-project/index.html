@@ -11,105 +11,122 @@
     <!-- all content in blocks have wrap. a bit padding AT CONTENT -->
     <!-- But also all page have a wrapper  beside few element with bleeding-->
     <!-- All DIVs with infomation at PC will be with flex and display. All blocks will be moved. -->
-<div class="main_wrapper">
     <!-- SITE BELOW -->
 
     <!-- nav with list of 5 items on mobile up-down, on PC left-right and above 
         search form with symbol-->
-    <nav>
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-         <div class="navigation">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Team</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-         <div class="search">
-            <form method="post">
-                <label for="search"></label>
-                <input type="text" id="search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+    <nav class="nav_wrapper" id="home">
+        <div class="nav_content">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="navigation">
+                 <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About Us</li></a>
+                    <a href="#services"><li>Services</li></a>
+                    <a href="#team"><li>Team</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="search">
+                <form method="post">
+                    <label for="search"></label>
+                    <input type="text" id="search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </div>
     </nav>
     <!-- header? or div with photo on a background and paragraph with h1 with transparent black background-color. Orange button brobably -->
     <header>
         <div class="welcome">
-            <div>
+            <div class="welcome_bleeding">
                 <img src="images/main-banner.jpg" alt="main-banner">
+            </div>
+            <div class="welcome_content">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet quaerat autem amet iusto quae asperiores iure, officiis deleniti. Maxime omnis error suscipit soluta ipsam aut iste natus molestias totam!</p>
             </div>
-            <button class="orange_button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                <button class="orange_button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
         </div>
     </header>
 
     <!-- ABOUT US
     div. Ancher point. content have padding. Yellow background.Image above. H1. Paragraph. At PC img left. Background have bleeding. -->
-    <div class="about_us">
-        <div class="about_wrapper">
-            <img src="images/about-us.jpg" alt="about">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem suscipit aut, quidem in sapiente consectetur voluptates quae corrupti quasi vero quibusdam provident ipsam ex soluta laudantium quod illum dolor.</p>
-        </div>
+    <div class="about_us" id="about">
+            <div class="about_content">
+                <img src="images/about-us.jpg" alt="about">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, exercitationem suscipit aut, quidem in sapiente consectetur voluptates quae corrupti quasi vero quibusdam provident ipsam ex soluta laudantium quod illum dolor.</p>
+            </div>
     </div>
 
     <!-- OUR SERVICES 
     main div with H1 and display: grid(6) in PC, one line up-down in mobile. Display: flex?
     ALL small pages into this div-->
-    <div class="services-main">
+    <div class="services-main" id="services">
         <h1>Our Services</h1>
-    <!-- DIGITAL INFORMATION/MARKETING/VIDEO/WEB DEV/PRINT 
+        <!-- DIGITAL INFORMATION/MARKETING/VIDEO/WEB DEV/PRINT 
     
-    each is a div with yeallow background. Image, H1 andparagraph. Black buttons. tags: a, with link to main page, background-color, symbol caret, text at the center(margin)? different sizes on a PC and mobile.
-    TIP from Rob: in CSS create a styles of orange and black button with one-two base of buttons-->
-    <div class="digital">
-        <img src="images/digital.jpg" alt="digital">
-        <h2>Digital Transformation</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptates a enim voluptatibus ipsam, maxime, deleniti nobis dolorem distinctio quibusdam explicabo eos. Non dignissimos accusamus quod consequuntur ipsum nostrum perferendis!</p>
-        <button class="black_button">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+        each is a div with yeallow background. Image, H1 andparagraph. Black buttons. tags: a, with link to main page, background-color, symbol caret, text at the center(margin)? different sizes on a PC and  mobile.
+        TIP from Rob: in CSS create a styles of orange and black button with one-two base of buttons-->
+        <div class="digital">
+            <div class="digital_wrapper">
+                <img src="images/digital.jpg" alt="digital">
+                <h2>Digital Transformation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptates a enim voluptatibus ipsam, maxime, deleniti nobis dolorem distinctio quibusdam explicabo eos. Non dignissimos accusamus quod consequuntur ipsum nostrum perferendis!</p>
+                <button class="black_button">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </div>
-     <div class="marketing">
-        <img src="images/marketing.jpg" alt="marketing">
-        <h2>Marketing</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aliquam ducimus saepe fugiat nulla laudantium quam nobis accusamus soluta, modi eveniet odio ab nesciunt assumenda unde! Nulla temporibus architecto quae.</p>
-        <button class="black_button">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
-     </div>
-     <div class="video">
-        <img src="images/video.jpg" alt="video">
-        <h2>Video Production</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ex consectetur quaerat laudantium consequuntur, dolores, dolorum corporis, maxime non voluptate a doloremque quos quas similique voluptates. Eum facere fugiat deleniti.</p>
-        <button class="black_button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
-     </div>
-     <div class="web_development">
-        <img src="images/web.jpg" alt="web">
-        <h2>Web Development</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ipsa sed ut corporis fuga officia nesciunt expedita unde laudantium eos itaque at, a ea dicta quaerat quos molestiae nam voluptate!</p>
-        <button class="black_button">Web Plans <i class="fa-solid fa-caret-right"></i></button>
-     </div>
+        <div class="marketing">
+            <div class="marketing_wrapper">
+                <img src="images/marketing.jpg" alt="marketing">
+                <h2>Marketing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aliquam ducimus saepe fugiat nulla laudantium quam nobis accusamus soluta, modi eveniet odio ab nesciunt assumenda unde! Nulla temporibus architecto quae.</p>
+                <button class="black_button">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video_wrapper">
+                <img src="images/video.jpg" alt="video">
+                <h2>Video Production</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ex consectetur quaerat laudantium consequuntur, dolores, dolorum corporis, maxime non voluptate a doloremque quos quas similique voluptates. Eum facere fugiat deleniti.</p>
+                <button class="black_button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
+        <div class="web_development">
+            <div class="web_dev_wrapper">
+                <img src="images/web.jpg" alt="web">
+                <h2>Web Development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ipsa sed ut corporis fuga officia nesciunt expedita unde laudantium eos itaque at, a ea dicta quaerat quos molestiae nam voluptate!</p>
+                <button class="black_button">Web Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
         <div class="print">
-            <img src="images/print.jpg" alt="print">
-            <h2>Print</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum vel consequuntur ipsum necessitatibus aperiam delectus cum aspernatur modi porro ipsa alias eligendi recusandae error omnis veniam, nam reprehenderit harum?</p>
-            <button class="black_button">Print Plans <i class="fa-solid fa-caret-right"></i></button>
+            <div class="print_wrapper">
+                <img src="images/print.jpg" alt="print">
+                <h2>Print</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum vel consequuntur ipsum necessitatibus aperiam delectus cum aspernatur modi porro ipsa alias eligendi recusandae error omnis veniam, nam reprehenderit harum?</p>
+                <button class="black_button">Print Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </div>
      </div>
-</div> <!--THIS IS AN END OF MAIN_WRAPPER OF FIRST PART-->
+     
 
- <div class="vision_wrapper_bleeding">
-  <!-- OUR VISION 
-    div with bleeding. Different wrapper. Image on a background, H1, paragraph, transparent button with orange stroke-->
+    <!-- OUR VISION 
+        div with bleeding. Different wrapper. Image on a background, H1, paragraph, transparent button with orange stroke-->
     <div class="vision">
-        <img src="images/vision.jpg" alt="vision">
-        <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque debitis corrupti nam nostrum ex exercitationem officia odit. Numquam exercitationem deserunt vel natus reiciendis, quam quia aut, a, earum voluptatibus veritatis?</p>
-        <button class="vision_button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+        <div class="vision_bleeding">
+            <img src="images/vision.jpg" alt="vision">
+        </div>
+        <div class="vision_wrapper">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque debitis corrupti nam nostrum ex exercitationem officia odit. Numquam exercitationem deserunt vel natus reiciendis, quam quia aut, a, earum voluptatibus veritatis?</p>
+            <button class="vision_button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+        </div>
     </div>
-</div> 
- <div class="main_wrapper2"> <!--wrapper start-->
+
     <!-- OUR TEAM
     main div with display:grid on a PC. In mobile just a column. 
     
@@ -118,31 +135,36 @@
     IN PC:
     EACH div. Yellow background. Image in a different sides. H1, h2, LINE, paragraph.-->
 
-    <div class="our_team">
+    <div class="our_team" id="team">
+        <h1>Our Team</h1>
         <div class="john">
-            <div><img src="images/john.jpg" alt="john"></div>
-            <div>
-            <h2>John Doe</h2>
-            <h3>CEO and Co-owner</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quia, magni cupiditate provident quibusdam asperiores soluta doloremque impedit aperiam harum ducimus rem ab delectus ut, sint, neque quae? Architecto, officia?</p>
-           </div>
+            <div  class="john_photo">
+                <img src="images/john.jpg" alt="john">
+            </div>
+            <div class="john_wrapper">
+                <h2>John Doe</h2>
+                <h3>CEO and Co-owner</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quia, magni cupiditate provident quibusdam asperiores soluta doloremque impedit aperiam harum ducimus rem ab delectus ut, sint, neque quae? Architecto, officia?</p>
+            </div>
         </div>
         <div class="bob">
-            <div><img src="images/bob.jpg" alt="bob"></div>
-            <div>
+            <div class="bob_photo">
+                <img src="images/bob.jpg" alt="bob">
+            </div>
+            <div class="bob_wrapper">
                 <h2>Bob Rite</h2>
                 <h3>CFO and Co-owner</h3>
                 <hr>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, veniam qui. Perspiciatis iure culpa commodi excepturi eaque aut quisquam cumque qui veniam inventore? Natus assumenda, quos itaque possimus ducimus officia.</p>
             </div>
         </div>
-
     </div>
- <div class="contact_us">
-    <h1>Contact Us</h1>
-    <!-- CONTACT US
-     MAIN DIV WITH H1
+
+    <div class="contact_us" id="contact">
+        <h1>Contact Us</h1>
+        <!-- CONTACT US
+        MAIN DIV WITH H1
             one more div SEND US A MESSAGE
                 h2
                 forms
@@ -156,58 +178,55 @@
             IN PC: DISPLAY: GRID
             Send us a message and Location in the same row
         -->
-    <div class="send_message">
-        <h2>Send us a message</h2>
-        <form action="post">
-            <label for="name">Full Name</label>
-            <input type="text" id="name">
-        </form>
-        <form action="post">
-            <label for="email">Email</label>
-            <input type="text" id="email">
-        </form>
-        <form action="post">
-            <label for="message">Message</label>
-            <input type="text" id="message">
-        </form>
-        <button class="message_button">Send</button>
-     </div>
-     <div class="hours">
-        <h2>Hours of operation</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Days</th>
-                    <th>Hours</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Monday - Friday</td>
-                    <td>9 AM - 6 PM</td>
-                </tr>
-                <tr>
-                    <td>Saturday - Sunday</td>
-                    <td>Closed</td>
-                </tr>
-            </tbody>
-        </table>
-     </div>
-     <div class="location">
-        <h2>Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d358951.0148958495!2d-76.21162042190291!3d45.342659079345545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1712071207805!5m2!1sen!2sca"></iframe>
-     </div>
-</div> <!--wrapper end-->
-    <!-- FOOTER
-    black background
-    paragraphs
-    orange font color -->
-    <footer class="footer_wrapper">
-        <div class="footer_content">
-        <p>Copyright Three Star Media, 2020</p>
-        <p>All images are taken from Unsplash</p>
+        <div class="contact_content">
+            <div class="send_message">
+                <h2>Send us a message</h2>
+                    <form action="post">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <label for="message">Message</label>
+                        <input type="text" id="message">
+                    </form>
+                        <button class="message_button">Send</button>
+            </div>
+            <div class="hours">
+                <h2>Hours of operation</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="location">
+                <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d358951.0148958495!2d-76.21162042190291!3d45.342659079345545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1712071207805!5m2!1sen!2sca"></iframe>
+            </div>
         </div>
-    </footer>
-</div>
+    </div>  
+        <!-- FOOTER
+        black background
+        paragraphs
+        orange font color -->
+        <footer class="footer_wrapper">
+            <div class="footer_content">
+                <p>Copyright Three Star Media, 2020</p>
+                <p>All images are taken from Unsplash</p>
+            </div>
+        </footer>
 </body>
 </html>
