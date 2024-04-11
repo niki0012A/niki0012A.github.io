@@ -53,27 +53,25 @@ html{
 
 .nav_wrapper{
     background-color: #222 ;
+    width: 100%;
 }
 .nav_content{
-    width: 100%;
+    padding-top: 15px;
+    width: 97%;
     margin: auto;
+
 }
 
 .navigation{
     margin: auto;
     text-align: center;
-    width: 97%;              /* PADDING FOR CONTENT */
-    padding-top: 10px;
-}
-.logo{
-    padding: 10px;
 }
 .navigation a{
     color: #c78c06;
 }
 
 .navigation ul li:hover a {
-    color: #222;
+    color: #000000;
 }
 
 .navigation a{
@@ -90,17 +88,27 @@ html{
     margin-top: -120px;
 }
 .search{
-    padding: 10px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: auto;
     justify-content: center;
 }
 .search input{
-    width: 94.5%;
+    height: 30px;
+    display: inline-block;
+    width: calc(93.5%);
+    
 }
 .search button{
-    margin-left: -5px;
+    height: 35px;
+    margin-left: -4px;
     background-color: #222;
     border: 1px solid #c78c06;
+    display: inline-block;
+    width: calc(5.2%);
+
+    
 }
 .search i{
     font-size: 16px;
@@ -167,28 +175,33 @@ html{
         
     }
     .navigation ul{
+        white-space: nowrap;
         display: flex;
         padding: 20px;
         margin: auto;
     }
     .navigation li{
         margin: auto;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 40px;
+        padding-left: 40px;
         padding-bottom: 20px;
         padding-top: 20px;
     }
     .navigation li:nth-child(1){
         margin-top: 0px;
         padding-top: 15px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 40px;
+        padding-left: 40px;
         padding-bottom: 20px;
         padding-top: 20px;
     }
      .search input{
-        width: 150px;
-        margin-left: -50px;
+        width: 100%;
+        height: 28.7px;
      }
-    
-}
+     .search button{
+        width: 15% ;
+        height: 34px;
+     }
+     
+    }
