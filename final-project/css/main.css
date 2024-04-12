@@ -51,13 +51,15 @@ html{
 }
 
 
+/* NAVIGARION START*/
+
 .nav_wrapper{
     background-color: #222 ;
     width: 100%;
 }
 .nav_content{
     padding-top: 15px;
-    width: 97%;
+    width: 95%;
     margin: auto;
 
 }
@@ -88,7 +90,6 @@ html{
     margin-top: -120px;
 }
 .search{
-    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: auto;
@@ -97,7 +98,7 @@ html{
 .search input{
     height: 30px;
     display: inline-block;
-    width: calc(93.5%);
+    width: calc(92%);
     
 }
 .search button{
@@ -106,9 +107,7 @@ html{
     background-color: #222;
     border: 1px solid #c78c06;
     display: inline-block;
-    width: calc(5.2%);
-
-    
+    width: calc(6.4%);
 }
 .search i{
     font-size: 16px;
@@ -120,6 +119,36 @@ html{
 }
 .search i{
     padding-top: 3.5px;
+}
+
+/* NAVIGATION END */
+
+/* HEADER STRATS */
+.welcome{
+    height: 650px;
+    overflow: hidden;
+}
+.welcome_bleeding img{
+    margin-top: -250px;
+    width: 100%;
+    position: relative;
+}
+.welcome_content{
+    background-color: #222222bc;
+    position: absolute;
+    top: 45%;
+    text-align: left;
+    color: white;
+    padding: 13px;
+}
+.welcome_content h1{
+    line-height: 70px;
+    font-size: 46px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.welcome_content p{
+    line-height: 25px;
 }
 
 
@@ -161,6 +190,7 @@ html{
 /* DESKTOP VERSION BELOW */
 
 @media screen and (min-width: 760px){
+    /* navigation starts */
     .nav_content{
         display: flex;
         width: 80%;
@@ -203,5 +233,33 @@ html{
         width: 15% ;
         height: 34px;
      }
-     
+     /*navigation end */
+
+     /*header starts */
+
+    .welcome_bleeding img{
+
+
     }
+    .welcome_bleeding{
+        width: 1519px; 
+        height: 1200px;
+    }
+
+    .welcome_content{
+        width: 1103px;
+        margin-left: 201px;
+        background-color: #222222bc;
+        text-align: left;
+        color: white;
+    }
+    .welcome_content h1{
+        line-height: 100px;
+        font-size: 76px;
+        font-weight: 700;
+        padding-bottom: 24px;
+    }
+    .welcome_content p{
+        line-height: 25px;
+    }
+}
