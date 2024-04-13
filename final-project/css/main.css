@@ -123,33 +123,61 @@ html{
 
 /* NAVIGATION END */
 
-/* HEADER STRATS */
+/* HEADER STRATS 
+Image on a background, change the size. margin(?) on top.
+Transparent background. */
 .welcome{
-    height: 650px;
+    height: 850px;
     overflow: hidden;
 }
 .welcome_bleeding img{
-    margin-top: -250px;
-    width: 100%;
-    position: relative;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
 }
 .welcome_content{
     background-color: #222222bc;
-    position: absolute;
-    top: 45%;
+    position: relative;
+    margin-top: 16%;
+    height: auto;
     text-align: left;
     color: white;
     padding: 13px;
 }
 .welcome_content h1{
+    margin-top: 20px;
     line-height: 70px;
-    font-size: 46px;
+    font-size: 56px;
     font-weight: 700;
     padding-bottom: 24px;
 }
 .welcome_content p{
     line-height: 25px;
 }
+.orange_button{
+    margin-top: 10px;
+    background-color: #c78c06;
+    border: 0;
+    padding: 20px 25px;
+    font-size: 15px;
+}
+.welcome_content i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* HEADER ENDS */
+
+/*ABOUT US STARTS 
+Backrond color. Image below. Separate structure, probably with display. Padding around image. H1. Paragraph.*/
+
+
+
+
+
+
+
+
 
 
 
@@ -235,15 +263,20 @@ html{
      }
      /*navigation end */
 
-     /*header starts */
+     /*header starts
+     Image on a background, bleeding, change font size, button size */
+
 
     .welcome_bleeding img{
-
-
+        margin-top: -270px;
+        position: relative;
+        width: 100%;
+        height: 1160px;
     }
     .welcome_bleeding{
         width: 1519px; 
-        height: 1200px;
+        height: 650px;
+        overflow: hidden;
     }
 
     .welcome_content{
@@ -252,6 +285,8 @@ html{
         background-color: #222222bc;
         text-align: left;
         color: white;
+        position: absolute;
+        margin-top: -520px;
     }
     .welcome_content h1{
         line-height: 100px;
@@ -262,4 +297,34 @@ html{
     .welcome_content p{
         line-height: 25px;
     }
+
+    /* BUTTON FOR WELCOME 
+    Padding, change width, bigger font size*/
+
+    .orange_button{
+        width: 230px;
+        height: 80px;
+        margin-top: 10px;
+        background-color: #c78c06;
+        border: 0;
+        padding: 20px 25px;
+        font-size: 20px;
+    }
+    .welcome_content i{
+        font-size: 29px;
+        margin-left: 5px;
+    }
+    
+    /* header ends */
+
+    /*about us starts    
+    Backrond color with bleeding. Image on left. Padding. Probably grid. */
+
+
+
+
+
+
+
+
 }
