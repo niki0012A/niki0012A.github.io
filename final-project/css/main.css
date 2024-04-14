@@ -251,12 +251,13 @@ same */
 .marketing{
     background-color: #ffe6ac;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .marketing_text{
     padding: 15px;
 }
 .marketing img{
-    width: 100%;
+    width: 95%;
 }
 .marketing h2{
     font-size: 30px;
@@ -264,6 +265,81 @@ same */
     margin: 15px 0 20px 0;
 }
 .marketing p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/*MARKETING ENDS*/
+/*VIDEO STARTS
+same*/
+
+.video{
+    background-color: #ffe6ac;
+}
+.video_text{
+    padding: 15px;
+}
+.video img{
+    width: 100%;
+}
+.video h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 20px 0;
+}
+.video p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+}
+/*VIDEO ENDS*/
+/* WEB DEV STARTS */
+
+.web_development{
+    background-color: #ffe6ac;
+    margin: 20px 0 0 0;
+}
+.web_text{
+    padding: 15px;
+}
+.web_development img{
+    width: 100%;
+    height: 45%;
+}
+.web_development h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 20px 0;
+}
+.web_development p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* WEB DEV ENDS */
+/* PRINT STARTS 
+same */
+.print{
+    background-color: #ffe6ac;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.print_text{
+    padding: 15px;
+}
+.print img{
+    width: 100%;
+    height: 45%;
+}
+.print h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 20px 0;
+}
+.print p{
     font-size: 13px;
     line-height: 20px;
     font-weight: 500;
@@ -457,13 +533,23 @@ same */
     Same design at each part, but different placement */
 
     .services_main {
-        width: 73.5%;
+        width: 73.6%;
         margin: auto;
     }
     .services_grid{
+        width: 101%;
+    }
+    .grid_two{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .grid_three{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     
     /*end of OUR SERVICES
@@ -471,20 +557,48 @@ same */
 
     DIGITAL Transformations starts */
     .digital{
-        width: 565px;
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
+        width: 95%;
+        grid-column: 1 / 2;
+
     }
     /*DIGITAL Transformations ENDS */
     /*MARKETING starts */
     
     .marketing{
-        width: 565px;
+        width: 100%;
         margin-top: 0;
-        grid-column: 3 / 8;
+        grid-column: 2 / 3;
         grid-row: 1 / 2;
+        margin-bottom: 0;
     }
+    /*MARKETING ends */
+    /*VIDEO STARTS
+    same*/
+
+    video {
+        grid-column: 1 / 2;
     
+    }
+    /*VIDEO ENDS*/
+    /* WEB DEV STARTS */
+
+    .web_development{
+        margin: 0;
+        grid-column: 2 / 3;
+        margin-left: 10px;
+        height: 550px;
+    }
+
+    /* WEB DEV ENDS */
+    /* PRINT STARTS
+    same */
+    .print{
+        margin: 0;
+        grid-column: 3 / 4;
+        margin-left: 10px;
+    }
+
+
 
 
     .black_button{                        /*FOR EACH BLACK BUTTONS */
