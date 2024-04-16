@@ -562,7 +562,20 @@ Location
 
 /*CONTACT US ENDS */
 /*FOOTER STARTS
-back background, orange text */
+back background, orange text, padding as always*/
+
+.footer {
+    background-color: #222;
+}
+.footer_content{
+    padding: 15px;
+    color: #c78c06;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+/*FOOTER ENDS */
+
 
 
 
@@ -1063,7 +1076,21 @@ same items, but different width, grid.*/
 
     /*CONTACT US ENDS */
 
+    /*FOOTER STARTS
+    same but width*/
 
+    .footer {
+    background-color: #222;
+    }
+    .footer_content{
+    width: 75%;
+    margin: auto;
+    color: #c78c06;
+    line-height: 40px;
+    font-size: 15px;
+    }
+
+    /*FOOTER ENDS */
 
 
 
