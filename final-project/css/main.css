@@ -92,14 +92,13 @@ html{
 .search{
     padding-top: 15px;
     padding-bottom: 15px;
-    margin: auto;
+    margin: auto 0;
     justify-content: center;
+    width: 100%;
 }
 .search input{
     height: 30px;
-    display: inline-block;
-    width: calc(92%);
-    
+    width: 92%
 }
 .search button{
     height: 35px;
@@ -107,7 +106,7 @@ html{
     background-color: #222;
     border: 1px solid #c78c06;
     display: inline-block;
-    width: calc(6.449%);
+    width: 6%
 }
 .search i{
     font-size: 16px;
@@ -127,24 +126,23 @@ html{
 Image on a background, change the size. margin(?) on top.
 Transparent background. */
 .welcome{
-    height: 600px;   /*size of image */
-    overflow: hidden;
-}
-.welcome_bleeding img{
-    width: 100%;
+    background-image: url(/images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-size: cover;
     height: 600px;
-    position: absolute;
+    position: relative;
+    margin: auto;
 }
 .welcome_content{
     background-color: #222222bc;
-    position: relative;
-    margin-top: 15%;
-    height: auto;
     text-align: left;
     color: white;
-    width: 96.6%;
     padding: 15px;
+    position: absolute;
+    top: 15%;
 }
+
 .welcome_content h1{
     margin-top: 30px;
     line-height: 95px;
@@ -596,6 +594,15 @@ back background, orange text, padding as always*/
 
 
 
+
+
+
+
+
+
+
+
+
 /* DESKTOP VERSION BELOW */
 
 @media screen and (min-width: 760px){
@@ -608,15 +615,13 @@ back background, orange text, padding as always*/
 
     .nav_content{
         display: flex;
-        width: 80%;
-        margin: auto;
+        width: 75%;
     }
     .logo{
-        padding: 30px 50px;
+        padding: 30px 30px 30px 0;
     }
     .search form{
         display: flex;
-        padding: 20px;
         
     }
     .navigation ul{
@@ -626,7 +631,6 @@ back background, orange text, padding as always*/
         margin: auto;
     }
     .navigation li{
-        margin: auto;
         padding-right: 40px;
         padding-left: 40px;
         padding-bottom: 20px;
@@ -654,37 +658,30 @@ back background, orange text, padding as always*/
      Image on a background, bleeding, change font size, button size */
 
 
-     .welcome{
-        height: 650px; /*size of image */
-     }
-
-    .welcome_bleeding img{
-        margin-top: -270px;
-        position: relative;
-        width: 100%;
-        height: 1160px;
-    }
-    .welcome_bleeding{
-        width: 100%;
-        height: 650px;
-        overflow: hidden;
+    .welcome{
+        background-image: url(/images/main-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: 85% 55%;
+        background-size: cover;
     }
 
     .welcome_content{
-        width: 74.3%;
+        width: 75%;
         background-color: #222222bc;
         text-align: left;
         color: white;
-        position: absolute;
-        top: 20%;
-        left: 12.3%;
         padding: 15px;
+        position: relative;
+        margin: auto;
+        top: 25%;
+    
     }
     .welcome_content h1{
         line-height: 100px;
         font-size: 76px;
         font-weight: 700;
         padding-bottom: 24px;
+        margin: 0;
     }
     .welcome_content p{
         line-height: 25px;
@@ -722,7 +719,7 @@ back background, orange text, padding as always*/
     }
     .about_content{
         margin: auto;
-        width: 75%;
+        width: 76.5%;
         display: flex;
     }
     .about_text{
@@ -750,19 +747,21 @@ back background, orange text, padding as always*/
     Same design at each part, but different placement */
 
     .services_main {
-        width: 73.6%;
+        width: 75%;
         margin: auto;
     }
     .services_grid{
-        width: 101%;
+        width: 100%;
     }
     .grid_two{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
     .grid_three{
         display: grid;
+        grid-gap: 10px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         margin-bottom: 20px;
@@ -774,7 +773,8 @@ back background, orange text, padding as always*/
 
     DIGITAL Transformations starts */
     .digital{
-        width: 95%;
+        width: 100%;
+        height: 100%;
         grid-column: 1 / 2;
 
     }
@@ -789,7 +789,7 @@ back background, orange text, padding as always*/
         margin-bottom: 0;
     }
     .marketing img{
-        width: 95%;
+        width: 100%;
     }
     /*MARKETING ends */
     /*VIDEO STARTS
@@ -805,8 +805,7 @@ back background, orange text, padding as always*/
     .web_development{
         margin: 0;
         grid-column: 2 / 3;
-        margin-left: 10px;
-        height: 550px;
+        height: auto
     }
 
     /* WEB DEV ENDS */
@@ -815,7 +814,6 @@ back background, orange text, padding as always*/
     .print{
         margin: 0;
         grid-column: 3 / 4;
-        margin-left: 10px;
     }
 
     /* PRINT ENDS */
@@ -829,6 +827,7 @@ back background, orange text, padding as always*/
         padding: 30px;
         font-size: 20px;
         margin-top: 15px;
+        margin-bottom: 5px;
     }
     .black_button i{
         font-size: 25px;
@@ -855,7 +854,7 @@ back background, orange text, padding as always*/
     }
     
     .vision_content{
-        width: 74.3%;
+        width: 75%;
         position: absolute;
         left: 12.3%;
         top: 10%;
@@ -892,7 +891,7 @@ back background, orange text, padding as always*/
 
 
     .our_team{
-        width: 74.3%;
+        width: 75%;
         margin: auto;
     }
     .our_team h1{
