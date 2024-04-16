@@ -142,7 +142,7 @@ Transparent background. */
     height: auto;
     text-align: left;
     color: white;
-    width: 95.6%;
+    width: 96.6%;
     padding: 15px;
 }
 .welcome_content h1{
@@ -191,6 +191,7 @@ Backrond color. Image below. Separate structure, probably with display. Padding 
     line-height: 20px;
     font-weight: 500;
 }
+
 /* about us ends*/
 /* OUR SERVICES STARTS 
 Main H1
@@ -345,7 +346,52 @@ same */
     font-weight: 500;
 }
 
+/* PRINT ENDS */
 
+/* OUR VISION STARTS
+small height. Bleeding. Weight same as at the begining. Image on backgound. Padding. Button is almost the same, but a bit transparent. Orange border. */
+.vision{
+    position: relative;
+}
+
+.vision_bleeding{
+    width: 100%;
+    height: 300px;
+    overflow: hidden ;
+
+}
+.vision_bleeding img {
+    margin-top: -100px;
+    width: 100%;
+    height: 500px;
+}
+
+.vision_content{
+    position: absolute;
+    top: 10%;
+    padding: 15px;
+    color: white;
+}
+.vision_content h2{
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.vision_content p{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.vision_button{
+    background-color: #000114ad;
+    color: white;
+    padding: 35px;
+    border: solid 1px #c78c06;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+/*OUR VISION ENDS */
 
 
 
@@ -497,7 +543,7 @@ same */
 
     .about_us{
         background-color: #ffe6ac;
-        width: 100%;
+        width: auto;
     }
     .about_us img{
         width: 565px;
@@ -598,10 +644,10 @@ same */
         margin-left: 10px;
     }
 
+    /* PRINT ENDS */
 
 
-
-    .black_button{                        /*FOR EACH BLACK BUTTONS */
+    .black_button{               /*FOR EACH BLACK BUTTONS */
         width: 100%;
         background-color: #222;
         color: white;
@@ -615,10 +661,54 @@ same */
     }
 
 
+    /* OUR VISION STARTS
+    almost the same as mobile. Different height. Bleeding same as at the begining. */
 
+    .vision{
+        position: relative;
+    }
+    
+    .vision_bleeding{
+        width: 100%;
+        height: 300px;
+        overflow: hidden ;
+    
+    }
+    .vision_bleeding img {
+        margin-top: -350px;
+        width: 100%;
+        height: auto
+    }
+    
+    .vision_content{
+        width: 74.3%;
+        position: absolute;
+        left: 12.3%;
+        top: 10%;
+        padding: 15px;
+        color: white;
+    }
+    .vision_content h2{
+        font-size: 40px;
+        font-weight: bolder;
+        padding-bottom: 30px;
+    }
+    .vision_content p{
+        line-height: 24px;
+        font-size: 15px;
+    }
+    
+    .vision_button{
+        background-color: #000114ad;
+        color: white;
+        padding: 35px;
+        border: solid 1px #c78c06;
+        padding: 35px;
+        font-size: 22px;
+        margin-top: 20px;
+    }
 
-
-
+    /*OUR VISION ENDS */
 
 
 }
