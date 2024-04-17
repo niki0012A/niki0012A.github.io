@@ -42,7 +42,7 @@ table {
 	border-spacing: 0;
 }
 
-/* End of reset */
+/* END OF RESET */
 
 
 
@@ -51,15 +51,15 @@ html{
 }
 
 
-/* NAVIGARION START*/
+/* NAVIGARION START
+Text align to center. Overlapping with logo. Oarnage hover activation. Orange text > black text. Search form. Button with orange border and black background. Font Awesome for magnif glass.*/
 
 .nav_wrapper{
     background-color: #222 ;
     width: 100%;
 }
 .nav_content{
-    padding-top: 15px;
-    width: 95%;
+    padding: 15px;
     margin: auto;
 
 }
@@ -95,29 +95,28 @@ html{
     margin: auto 0;
     justify-content: center;
     width: 100%;
+} 
+.search_all{
+    width: 100%;
+    height: 100%;
 }
-.search input{
-    height: 30px;
-    width: 92%
-}
-.search button{
-    height: 35px;
-    margin-left: -4px;
-    background-color: #222;
-    border: 1px solid #c78c06;
-    display: inline-block;
-    width: 6%
-}
-.search i{
-    font-size: 16px;
-    color: #c78c06;
+.search_all input{
+    border: none;
+    margin-right: -4px;
+    width: calc(99% - 30px)
 }
 .search input,
 .search button {
-    line-height: 25px;
+    line-height: 30px;
 }
-.search i{
-    padding-top: 3.5px;
+.search_all button{
+    border: 1px solid #c78c06;
+    background-color: #222;
+    width: 30px;
+}
+.search_all i{
+    font-size: 16px;
+    color: #c78c06;
 }
 
 /* NAVIGATION END */
@@ -351,23 +350,20 @@ small height. Bleeding. Weight same as at the begining. Image on backgound. Padd
     position: relative;
 }
 
-.vision_bleeding{
+.vision{
     width: 100%;
     height: 300px;
-    overflow: hidden ;
-
-}
-.vision_bleeding img {
-    margin-top: -100px;
-    width: 100%;
-    height: 500px;
+    background-image: url("/images/vision.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: cover;
 }
 
 .vision_content{
-    position: absolute;
-    top: 10%;
-    padding: 15px;
+    width: 95%;
+    padding-top: 35px;
     color: white;
+    margin: auto;
 }
 .vision_content h2{
     font-size: 32px;
@@ -606,7 +602,8 @@ back background, orange text, padding as always*/
 /* DESKTOP VERSION BELOW */
 
 @media screen and (min-width: 760px){
-    /* navigation starts */
+    /* /* NAVIGARION START
+    FLEX. Change width, margin. All in one row. Same hover, same text. */
     
     .nav_wrapper{
         background-color: #222 ;
@@ -623,6 +620,9 @@ back background, orange text, padding as always*/
     .search form{
         display: flex;
         
+    }
+    .search{
+        width: auto;
     }
     .navigation ul{
         white-space: nowrap;
@@ -644,14 +644,19 @@ back background, orange text, padding as always*/
         padding-bottom: 20px;
         padding-top: 20px;
     }
+    .search_all{
+        height: 100%;
+    }
      .search input{
-        width: 100%;
-        height: 28.7px;
+        width: 200px;
      }
      .search button{
-        width: 15% ;
-        height: 34px;
+        width: auto ;
      }
+     .search input,
+    .search button {
+        line-height: 30px;
+    }
      /*navigation end */
 
      /*header starts
@@ -776,6 +781,7 @@ back background, orange text, padding as always*/
         width: 100%;
         height: 100%;
         grid-column: 1 / 2;
+        
 
     }
     /*DIGITAL Transformations ENDS */
@@ -783,10 +789,12 @@ back background, orange text, padding as always*/
     
     .marketing{
         width: 100%;
-        margin-top: 0;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        margin-bottom: 0;
+        margin: 0;
+    }
+    .marketing p{
+        margin: 0;
     }
     .marketing img{
         width: 100%;
@@ -838,27 +846,16 @@ back background, orange text, padding as always*/
     almost the same as mobile. Different height. Bleeding same as at the begining. */
 
     .vision{
-        position: relative;
-    }
-    
-    .vision_bleeding{
-        width: 100%;
         height: 300px;
-        overflow: hidden ;
-    
+        background-image: url("/images/vision.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-size: cover;
     }
-    .vision_bleeding img {
-        margin-top: -350px;
-        width: 100%;
-        height: auto
-    }
-    
+
     .vision_content{
         width: 75%;
-        position: absolute;
-        left: 12.3%;
-        top: 10%;
-        padding: 15px;
+        margin: auto;
         color: white;
     }
     .vision_content h2{
