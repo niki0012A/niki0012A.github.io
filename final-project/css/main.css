@@ -125,7 +125,7 @@ Text align to center. Overlapping with logo. Oarnage hover activation. Orange te
 Image on a background, change the size. margin(?) on top.
 Transparent background. */
 .welcome{
-    background-image: url("https://raw.githubusercontent.com/niki0012A/niki0012A.github.io/main/final-project/images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
     background-repeat: no-repeat;
     background-position: 40%;
     background-size: cover;
