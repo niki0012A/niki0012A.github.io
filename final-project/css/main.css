@@ -612,7 +612,7 @@ back background, orange text, padding as always*/
 
     .nav_content{
         display: flex;
-        width: 75%;
+        width: 1200px;
     }
     .logo{
         padding: 30px 30px 30px 0;
@@ -671,7 +671,7 @@ back background, orange text, padding as always*/
     }
 
     .welcome_content{
-        width: 75%;
+        width: 1200px;
         background-color: #222222bc;
         text-align: left;
         color: white;
@@ -724,7 +724,7 @@ back background, orange text, padding as always*/
     }
     .about_content{
         margin: auto;
-        width: 76.5%;
+        width: 1200px;
         display: flex;
     }
     .about_text{
@@ -752,7 +752,7 @@ back background, orange text, padding as always*/
     Same design at each part, but different placement */
 
     .services_main {
-        width: 75%;
+        width: 1200px;
         margin: auto;
     }
     .services_grid{
@@ -803,9 +803,11 @@ back background, orange text, padding as always*/
     /*VIDEO STARTS
     same*/
 
-    video {
+    .video {
         grid-column: 1 / 2;
-    
+    }
+    .video img{
+        height: 45%;
     }
     /*VIDEO ENDS*/
     /* WEB DEV STARTS */
@@ -854,7 +856,7 @@ back background, orange text, padding as always*/
     }
 
     .vision_content{
-        width: 75%;
+        width: 1200px;
         margin: auto;
         color: white;
     }
@@ -888,7 +890,7 @@ back background, orange text, padding as always*/
 
 
     .our_team{
-        width: 75%;
+        width: 1200px;
         margin: auto;
     }
     .our_team h1{
@@ -942,7 +944,7 @@ back background, orange text, padding as always*/
         flex-direction: row-reverse;
     }
     .bob_photo{
-        width: 1680px;
+        width: 1670px;
     }
     .bob_photo img{
         display: block;
@@ -974,7 +976,7 @@ message location
 same items, but different width, grid.*/
 
     .contact_us{
-        width: 75%;
+        width: 1200px;
         margin: auto;
     }
     .contact_content{
@@ -1081,7 +1083,7 @@ same items, but different width, grid.*/
     background-color: #222;
     }
     .footer_content{
-    width: 75%;
+    width: 1200px;
     margin: auto;
     color: #c78c06;
     line-height: 40px;
