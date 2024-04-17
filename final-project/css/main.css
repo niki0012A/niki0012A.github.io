@@ -719,7 +719,7 @@ back background, orange text, padding as always*/
         width: auto;
     }
     .about_us img{
-        width: 565px;
+        width: 595px;
         grid-column: 1 / 2;
     }
     .about_content{
